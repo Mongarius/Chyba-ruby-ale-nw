@@ -19,7 +19,7 @@
         <td><%= music.title %></td>
         <td><%= music.artist %></td>
         <td><%= music.link %></td>
-        <td><%= podloveaudio(src: 'https://www.dropbox.com/s/j3eohsd0i9tatjk/Dj_Jura_Fin_-_Bazooka.mp3', duration: '', title: 'My track') %></td>
+        <td><%= podloveaudio(src: 'https://www.dropbox.com/s/j3eohsd0i9tatjk/Dj_Jura_Fin_-_Bazooka.mp3', duration: '', title: music.title, artist: music.artist) %></td>
         <td><%= link_to 'Show', music %></td>
         <td><%= link_to 'Edit', edit_music_path(music) %></td>
         <td><%= link_to 'Destroy', music, method: :delete, data: { confirm: 'Are you sure?' } %></td>
